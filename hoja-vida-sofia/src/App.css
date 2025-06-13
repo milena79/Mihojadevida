@@ -1,0 +1,198 @@
+#root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --text-color: #333;
+  --border-color: #ddd;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+p {
+  font-size: 1.1rem;
+}
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 30px;
+  background-color: #3b26c2; 
+  border-radius: 8px;
+  color: white;
+}
+.header:hover {
+  transform: scale(1.05);
+}
+.header h1,
+.header h2 {
+  color: white;
+  margin: 0;
+}
+
+.contacto-info {
+  margin-top: 15px;
+}
+
+.contacto-info p {
+  margin: 5px 0;
+}
+
+/* Imagen de perfil */
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid white;
+}
+.foto-perfil:hover {
+  transform: scale(1.05);
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Educación */
+.educacion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.educacion-item {
+  display: flex;
+  gap: 20px;
+}
+
+.year {
+  font-weight: bold;
+  min-width: 80px;
+}
+.educacion-details p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.educacion-details h3 {
+  margin: 0;
+  color: #3b26c2;
+}
+
+/* Habilidades */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: var(--light-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #3b26c2;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+/* Experiencia */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 30px;
+}
+
+.section2 {
+  background-color: var(--light-color);
+  padding: 20px;
+  background-color: #3b26c2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section2:hover {
+  transform: scale(1.05);
+}
+
+
+.position {
+  font-style: italic;
+  color: var(--secondary-color);
+  margin: 5px 0 15px;
+}
+
+.supervisor,
+.contact {
+  margin: 5px 0;
+}
+
+/* Referencias */
+.references-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reference-item {
+  background-color: var(--light-color);
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 350px;
+  background-color: #3b26c2;
+}
+.reference-item:hover {
+  transform: scale(1.05);
+}
+
+.reference-item h3 {
+  margin-top: 0;
+  color: var(--light-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .educacion-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .year {
+    margin-bottom: 5px;
+  }
+}
